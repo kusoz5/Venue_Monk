@@ -1,0 +1,21 @@
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+          long sum = 1000;
+        long a;
+        for (a = 1; a <= sum/3; a++)
+        {
+            long b;
+            for (b = a + 1; b <= sum/2; b++)
+            {
+                long c = sum - a - b;
+                if ( a*a + b*b == c*c ) {
+                    System.out.println(a * b * c);
+                    break;
+                }
+            }
+        }
+       
+    }
+}
